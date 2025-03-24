@@ -1,10 +1,15 @@
 :root {
     --font-family: 'Poppins', sans-serif;
     --title-font: 'Sen', sans-serif;
-    --primary: #171100;
+    --primary: #ffb900;
+    --text-color: #171100;
     --bg-color: #fffcf4;
-    --yellow: #ffb900;
     --gray: #5f5b53;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 html {
@@ -16,7 +21,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.75;
     font-weight: 400;
-    color: var(--primary);
+    color: var(--text-color);
 }
 
 * {
@@ -25,6 +30,11 @@ body {
 
 a {
     text-decoration: none;
+}
+
+button {
+    border: none;
+    background: #fff;
 }
 
 /* Common */
@@ -44,18 +54,26 @@ a {
     align-items: center;
     justify-content: center;
     min-width: 118px;
-    border-radius: 24.5px;
+    border-radius: 25px;
     color: #fff;
     font-weight: 600;
     padding: 11px 0;
 }
 
 .black-btn {
-    background: var(--primary);
+    background: var(--text-color);
 }
 
 .yellow-btn {
-    background: var(--yellow);
+    background: var(--primary);
+}
+
+.small-btn {
+    font-size: 1.4rem;
+}
+
+.large-btn {
+    font-size: 1.8rem;
 }
 
 .btn:hover {
@@ -63,7 +81,7 @@ a {
 }
 
 .sub-title {
-    color: var(--primary);
+    color: var(--text-color);
     font-family: var(--title-font);
     font-size: 3.8rem;
     font-weight: 700;
@@ -74,7 +92,6 @@ a {
 .desc {
     color: #5f5b53;
     font-size: 1.8rem;
-    font-weight: 400;
     line-height: 1.67;
 }
 
@@ -108,7 +125,7 @@ a {
 
 .nav-item:hover,
 .nav-item:first-child {
-    color: var(--primary);
+    color: var(--text-color);
     text-shadow: 1px 0 0 currentColor;
 }
 
@@ -124,13 +141,14 @@ a {
     content: '';
     width: 12px;
     height: 2px;
-    background-color: var(--primary);
+    background-color: var(--text-color);
     border-radius: 1px;
 }
 
 .header .btn {
     width: 144px;
     margin-left: 49px;
+    border-radius: 24.5px;
 }
 
 /* Hero */
@@ -217,7 +235,7 @@ a {
     margin-top: 22px;
 }
 
-.hero .btn-group {
+.hero .cta-group {
     display: flex;
     align-items: center;
     margin: 38px 0 48px;
@@ -257,7 +275,7 @@ a {
 
 .hero .label {
     margin-left: 14px;
-    color: var(--primary);
+    color: var(--text-color);
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -270,11 +288,126 @@ a {
 }
 
 .stats strong {
-    color: var(--primary);
+    color: var(--text-color);
     font-family: var(--title-font);
     padding: 0 14px 0 28px;
     font-size: 4.4rem;
     font-weight: 700;
     line-height: 1.26;
     letter-spacing: normal;
+}
+
+/* Product */
+.products {
+    padding: 200px 0;
+}
+
+.products .row {
+    align-items: center;
+}
+
+.products .row-top .desc {
+    margin-top: 16px;
+    width: 458px;
+}
+
+.products .btn-group {
+    display: flex;
+}
+
+.products .control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: var(--primary);
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.products .control-btn:hover {
+    color: #fff;
+    background: var(--primary);
+}
+
+.products .control-btn + .control-btn {
+    margin-left: 18px;
+}
+
+.products .courses-list {
+    margin-top: 55px;
+    gap: 30px;
+}
+
+.products .course-item {
+    display: block;
+    width: 370px;
+    border: 1px solid #e2dfda;
+    border-radius: 12px;
+}
+
+.products .course-item:hover {
+    border: none;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.products .course-item .image {
+    height: 278px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.products .course-1 {
+    background: url('/assets/img/course-1.png') lightgray 50% / cover no-repeat;
+}
+
+.products .course-2 {
+    background: url('/assets/img/course-2.png') lightgray 50% / cover no-repeat;
+}
+
+.products .course-3 {
+    background: url('/assets/img/course-3.png') lightgray -169.455px -364.527px / 211.892% 423.637% no-repeat;
+}
+
+.products .body {
+    padding: 16px 22px 22px;
+}
+
+.products .body .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.products .rating {
+    display: flex;
+    align-items: center;
+}
+
+.products .rating .star {
+    width: 18px;
+    height: 18px;
+}
+
+.products .rating span {
+    margin-left: 6px;
+    padding-top: 2px;
+    color: var(--primary);
+    line-height: 1.75;
+}
+
+.products .body .desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.products .body .row {
+    margin-top: 12px;
+}
+
+.products .btn:hover {
+    opacity: 1;
+    background: var(--primary);
 }
