@@ -19,7 +19,7 @@ html {
 body {
     font-family: var(--font-family);
     font-size: 1.6rem;
-    line-height: 1.75;
+    line-height: 1.5;
     font-weight: 400;
     color: var(--text-color);
 }
@@ -38,7 +38,7 @@ button {
 }
 
 /* Common */
-.content {
+.main-content {
     width: 1170px;
     max-width: calc(100vw - 64px);
     margin: 0 auto;
@@ -54,10 +54,10 @@ button {
     align-items: center;
     justify-content: center;
     min-width: 118px;
+    height: 50px;
     border-radius: 25px;
     color: #fff;
     font-weight: 600;
-    padding: 11px 0;
 }
 
 .black-btn {
@@ -91,6 +91,15 @@ button {
 
 .desc {
     color: #5f5b53;
+    line-height: 1.75;
+}
+
+.small-desc {
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.large-desc {
     font-size: 1.8rem;
     line-height: 1.67;
 }
@@ -104,14 +113,18 @@ button {
 
 /* Header */
 .header {
-    position: sticky;
-    top: -28px;
     padding: 36px 0 8px;
     background: var(--bg-color);
+}
+
+.header.sticky {
+    position: sticky;
+    top: -28px;
     z-index: 1;
 }
 
-.header .row {
+.header .body {
+    display: flex;
     align-items: center;
 }
 
@@ -119,28 +132,32 @@ button {
     line-height: 0;
 }
 
-.nav {
+.header .nav {
+    margin-left: auto;
+}
+
+.header .nav ul {
     display: flex;
     align-items: center;
 }
 
-.nav-item {
+.header .nav a {
     color: #5f5b53;
     font-size: 1.6rem;
-    padding: 0 21px;
+    padding: 8px 21px;
 }
 
-.nav-item:hover,
-.nav-item:first-child {
+.header .nav a:hover,
+.header li.active a {
     color: var(--text-color);
     text-shadow: 1px 0 0 currentColor;
 }
 
-.nav-item:first-child {
+.header li.active a {
     position: relative;
 }
 
-.nav-item:first-child::before {
+.header li.active a::before {
     position: absolute;
     left: 21px;
     bottom: 6px;
@@ -164,7 +181,7 @@ button {
     background: var(--bg-color);
 }
 
-.hero .content {
+.hero .main-content {
     display: flex;
 }
 
@@ -214,20 +231,14 @@ button {
     min-width: 158px;
 }
 
-.overview-item .desc {
-    font-size: 1.4rem;
-    line-height: 1.86;
-}
-
 .overview-item .title {
-    font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
 }
 
 .hero .body {
     max-width: 470px;
-    margin-left: 130px;
+    margin: 64px 0 0 130px;
 }
 
 .hero .body .title {
@@ -240,6 +251,10 @@ button {
 
 .hero .body .desc {
     margin-top: 22px;
+}
+
+.hero .body .sub-desc {
+    line-height: 1.67;
 }
 
 .hero .cta-group {
@@ -406,8 +421,6 @@ button {
 
 .products .body .desc {
     margin-top: 6px;
-    font-size: 1.4rem;
-    line-height: 1.86;
 }
 
 .products .body .row {
@@ -482,10 +495,57 @@ button {
     border-radius: 50%;
 }
 
-.feedback .dot.active {
+.feedback .dotli.active {
     background: var(--primary);
 }
 
 .feedback .dot + .dot {
     margin-left: 6px;
+}
+
+/* Learner-outcomes */
+.learner-outcomes {
+    margin-top: 100px;
+    padding: 100px 0;
+}
+
+.learner-outcomes .row {
+    height: 438px;
+}
+
+.learner-outcomes .images {
+    display: flex;
+}
+
+.learner-outcomes .image {
+    width: 270px;
+    border-radius: 16px;
+}
+
+.learner-outcomes .image-left {
+    align-self: flex-end;
+    height: 404px;
+    background: url('/assets/img/learner-1.png') lightgray 50% / cover no-repeat;
+}
+
+.learner-outcomes .image-right {
+    margin-left: 30px;
+    height: 405px;
+    background: url('/assets/img/learner-2.png') lightgray 50% / cover no-repeat;
+}
+
+.learner-outcomes .body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40.5%;
+}
+
+.learner-outcomes .desc {
+    margin-top: 16px;
+}
+
+.learner-outcomes .btn {
+    margin-top: 32px;
+    min-width: 137px;
 }
