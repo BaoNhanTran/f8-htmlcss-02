@@ -41,46 +41,49 @@
         <main>
             <div class="hero">
                 <div class="main-content">
-                    <div class="img-block">
+                    <!-- Hero left -->
+                    <div class="img-block left-column">
                         <div class="hero-img"></div>
                         <div class="course-overview">
                             <div class="overview-item">
                                 <img src="./assets/img/page.png" alt="overview-img" class="overview-img" />
                                 <div class="info">
                                     <p class="desc small-desc">20 Courses</p>
-                                    <strong class="title">UI/UX Design</strong>
+                                    <strong class="sub-title">UI/UX Design</strong>
                                 </div>
                             </div>
                             <div class="overview-item">
                                 <img src="./assets/img/code-window.png" alt="overview-img" class="overview-img" />
                                 <div class="info">
                                     <p class="desc small-desc">20 Courses</p>
-                                    <strong class="title">Development</strong>
+                                    <strong class="sub-title">Development</strong>
                                 </div>
                             </div>
                             <div class="overview-item">
                                 <img src="./assets/img/megaphone.png" alt="overview-img" class="overview-img" />
                                 <div class="info">
                                     <p class="desc small-desc">20 Courses</p>
-                                    <strong class="title">Marketing</strong>
+                                    <strong class="sub-title">Marketing</strong>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="body">
-                        <h1 class="title">Learn without limits and spread knowledge.</h1>
+
+                    <!-- Hero right -->
+                    <div class="body right-column">
+                        <h1 class="heading">Learn without limits and spread knowledge.</h1>
                         <p class="desc large-desc">
                             Build new skills for that “this is my year” feeling with courses, certificates, and degrees
                             from world-class universities and companies.
                         </p>
                         <div class="cta-group">
-                            <a href="#!" class="btn yellow-btn large-btn see-courses">See Courses</a>
-                            <a href="#!" class="watch-video">
+                            <a href="#!" class="btn yellow-btn large-btn see-courses-btn">See Courses</a>
+                            <button class="watch-video-btn">
                                 <div class="play-icon">
                                     <img src="./assets/img/play.svg" alt="watch video" />
                                 </div>
                                 <b class="label">Watch Video</b>
-                            </a>
+                            </button>
                         </div>
                         <p class="desc sub-desc">Recent engagement</p>
                         <div class="desc stats">
@@ -92,11 +95,12 @@
                     </div>
                 </div>
             </div>
-            <div id="courses" class="products">
+            <div id="courses" class="products section-spacing">
                 <div class="main-content">
+                    <!-- Row top -->
                     <div class="row row-top">
                         <div>
-                            <h2 class="sub-title">Our popular courses</h2>
+                            <h2 class="heading">Our popular courses</h2>
                             <p class="desc large-desc">
                                 Build new skills with new trendy courses and shine for the next future career.
                             </p>
@@ -136,79 +140,85 @@
                             </button>
                         </div>
                     </div>
-                    <div class="row courses-list">
+                    <!-- Row bottom -->
+                    <div class="courses-list">
+                        <!-- Course item 1 -->
                         <div class="course-item">
                             <a href="#!">
-                                <div class="image course-1"></div>
+                                <div class="thumb course-1"></div>
                             </a>
                             <div class="body">
                                 <div class="row">
-                                    <h3 class="title line-clamp">Basic web design</h3>
+                                    <h3><a class="sub-title line-clamp break-all" href="#!">Basic web design</a></h3>
                                     <div class="rating">
-                                        <img src="./assets/img/star.svg" alt="" class="star" />
+                                        <img src="./assets/img/star.svg" alt="Star" class="star" />
                                         <span>4.5</span>
                                     </div>
                                 </div>
-                                <p class="desc small-desc line-clamp" style="--line-clamp: 3">
+                                <p class="desc small-desc line-clamp line-2 break-all">
                                     Get the best course, gain knowledge and shine for your future career.
                                 </p>
                                 <div class="row">
                                     <strong class="title">$120.75</strong>
-                                    <a class="btn black-btn small-btn" href="#!">Book Now</a>
+                                    <a class="btn black-btn highlight-btn small-btn" href="#!">Book Now</a>
                                 </div>
                             </div>
                         </div>
+                        <!-- Course item 2 -->
                         <div class="course-item">
                             <a href="#!">
-                                <div class="image course-2"></div>
+                                <div class="thumb course-2"></div>
                             </a>
                             <div class="body">
                                 <div class="row">
-                                    <h3 class="title line-clamp">UI/UX design</h3>
+                                    <h3><a class="sub-title line-clamp break-all" href="#!">UI/UX design</a></h3>
                                     <div class="rating">
-                                        <img src="./assets/img/star.svg" alt="" class="star" />
+                                        <img src="./assets/img/star.svg" alt="Star" class="star" />
                                         <span>4.5</span>
                                     </div>
                                 </div>
-                                <p class="desc small-desc line-clamp" style="--line-clamp: 3">
+                                <p class="desc small-desc line-clamp line-2 break-all">
                                     Get the best course, gain knowledge and shine for your future career.
                                 </p>
                                 <div class="row">
                                     <strong class="title">$120.75</strong>
-                                    <a class="btn black-btn small-btn" href="#!">Book Now</a>
+                                    <a class="btn black-btn highlight-btn small-btn" href="#!">Book Now</a>
                                 </div>
                             </div>
                         </div>
+                        <!-- Course item 3 -->
                         <div class="course-item">
                             <a href="#!">
-                                <div class="image course-3"></div>
+                                <div class="thumb course-3"></div>
                             </a>
                             <div class="body">
                                 <div class="row">
-                                    <h3 class="title line-clamp">Web App design</h3>
+                                    <h3>
+                                        <a class="sub-title line-clamp break-all" href="#!">Web App design</a>
+                                    </h3>
                                     <div class="rating">
-                                        <img src="./assets/img/star.svg" alt="" class="star" />
+                                        <img src="./assets/img/star.svg" alt="Star" class="star" />
                                         <span>4.5</span>
                                     </div>
                                 </div>
-                                <p class="desc small-desc line-clamp" style="--line-clamp: 3">
+                                <p class="desc small-desc line-clamp line-2 break-all">
                                     Get the best course, gain knowledge and shine for your future career.
                                 </p>
                                 <div class="row">
                                     <strong class="title">$120.75</strong>
-                                    <a class="btn black-btn small-btn" href="#!">Book Now</a>
+                                    <a class="btn black-btn highlight-btn small-btn" href="#!">Book Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="feedback">
+            <div id="pricing" class="feedback section-spacing">
                 <div class="main-content">
                     <div class="row">
                         <div class="user">
                             <div class="avatar"></div>
-                            <p class="sub-title">Peter Moor</p>
+                            <p class="heading">Peter Moor</p>
                             <p class="desc">Student of Web Design</p>
                             <div class="dots">
                                 <span class="dot active"></span>
@@ -227,15 +237,15 @@
                     </div>
                 </div>
             </div>
-            <div class="learner-outcomes">
+            <div id="reviews" class="learner-outcomes section-spacing">
                 <div class="main-content">
                     <div class="row">
-                        <div class="images">
+                        <div class="images left-column">
                             <div class="image image-left"></div>
                             <div class="image image-right"></div>
                         </div>
-                        <div class="body">
-                            <h2 class="sub-title">Learner outcomes through our awesome platform</h2>
+                        <div class="body right-column align-left">
+                            <h2 class="heading">Learner outcomes through our awesome platform</h2>
                             <p class="desc">
                                 87% of people learning for professional development report career benefits like getting
                                 a promotion, a raise, or starting a new career.
@@ -243,6 +253,89 @@
                             <p class="desc">Lesson Impact Report (2022)</p>
                             <a href="#!" class="btn yellow-btn">Sign Up</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-section">
+                <div class="main-content">
+                    <div class="row">
+                        <div class="body left-column align-left">
+                            <h2 class="heading">
+                                Take the next step toward your personal and professional goals with Lesson.
+                            </h2>
+                            <p class="desc">
+                                Take the next step toward. Join now to receive personalized and more recommendations
+                                from the full Coursera catalog.
+                            </p>
+                            <a href="#!" class="btn yellow-btn">Join Now</a>
+                        </div>
+                        <div class="image right-column"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs section-spacing">
+                <div class="main-content">
+                    <h2 class="heading">Our blog</h2>
+                    <p class="desc top-desc">
+                        Read our regular travel blog and know the latest update of tour and travel
+                    </p>
+                    <div class="blogs-list">
+                        <!-- Blog item 1 -->
+                        <div class="blog-item">
+                            <a href="#!"><div class="thumb blogger-1"></div></a>
+                            <div class="info align-left">
+                                <div class="head">
+                                    <span class="dot active"></span>
+                                    <p class="desc small-desc">21 November 2021</p>
+                                </div>
+                                <div class="separate"></div>
+                                <h3 class="line-clamp line-2 break-all">
+                                    <a class="sub-title" href="#!">
+                                        How to become a pro web designer in 2022 and get remote job?
+                                    </a>
+                                </h3>
+                                <a href="#!" class="btn black-btn highlight-btn small-btn">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Blog item 2 -->
+                        <div class="blog-item">
+                            <a href="#!"><div class="thumb blogger-2"></div></a>
+                            <div class="info align-left">
+                                <div class="head">
+                                    <span class="dot active"></span>
+                                    <p class="desc small-desc">21 November 2021</p>
+                                </div>
+                                <div class="separate"></div>
+                                <h3 class="line-clamp line-2 break-all">
+                                    <a class="sub-title" href="#!">
+                                        How to become a pro web designer in 2022 and get remote job?
+                                    </a>
+                                </h3>
+                                <a href="#!" class="btn black-btn highlight-btn small-btn">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Blog item 3 -->
+                        <div class="blog-item">
+                            <a href="#!"><div class="thumb blogger-3"></div></a>
+                            <div class="info align-left">
+                                <div class="head">
+                                    <span class="dot active"></span>
+                                    <p class="desc small-desc">21 November 2021</p>
+                                </div>
+                                <div class="separate"></div>
+                                <h3 class="line-clamp line-2 break-all">
+                                    <a class="sub-title" href="#!">
+                                        How to become a pro web designer in 2022 and get remote job?
+                                    </a>
+                                </h3>
+                                <a href="#!" class="btn black-btn highlight-btn small-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
                     </div>
                 </div>
             </div>
